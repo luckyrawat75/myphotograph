@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography project</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        .container {
+            height: 4100px;
+            width: 100%;
+
+
+        }
+
+        .box {
+
+            height: 700px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+
+        }
+
+        .cmt {
+
+            height: 670px;
+            width: 430px;
+
+
+        }
+
+        .cmt h1 {
+            padding-top: 220px;
+            padding-left: 30px;
+            font-size: 30px;
+
+        }
+
+        .cmt h3 {
+
+            padding-left: 100px;
+            font-size: 25px;
+
+        }
+
+        .cmt h2 {
+            padding-left: 110px;
+            font-size: 30px;
+        }
+
+        .cmt a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            border: 1px solid lightblue;
+            height: 50px;
+            padding: 10px 20px;
+            font-weight: bold;
+            width: 170px;
+            border-radius: 20px;
+            margin-left: 110px;
+            background-color: lightgrey;
+
+        }
+
+        .cmt a:hover {
+            background-color: white;
+        }
+
+        .cmt img {
+            height: 700px;
+            width: 470px;
+
+        }
+
+        .black {
+            height: 70px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: burlywood;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .black h1 {
+            font-size: 25px;
+            color: white;
+            padding-top: 15px;
+            padding-left: 43%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .photo2 {
+            height: 510px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+        }
+
+        .photo2 img {
+            height: 510px;
+            width: 900px;
+
+            margin-right: 50px;
+        }
+
+        .para2 {
+            height: 100px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: lightgreen;
+
+            font-size: 25px;
+
+        }
+
+        .para2 h4 {
+            padding-top: 10px;
+            padding-left: 43%;
+        }
+
+        .para2 h5 {
+            padding-left: 100px;
+            padding-top: 5px;
+            color: hsla(0, 0%, 0%, 0.847);
+        }
+
+        .photo3 {
+            height: 510px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+
+        }
+
+        .photo3 img {
+            height: 510px;
+            width: 900px;
+
+            margin-right: 50px;
+        }
+
+        .para3 {
+            height: 100px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: lightcoral;
+
+            font-size: 25px;
+
+        }
+
+        .para3 h4 {
+            padding-top: 10px;
+            padding-left: 43%;
+        }
+
+        .para3 h5 {
+            padding-left: 100px;
+            padding-top: 5px;
+            color: hsla(0, 0%, 0%, 0.847);
+        }
+
+        .photo4 {
+            height: 510px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+        }
+
+        .photo4 img {
+            height: 510px;
+            width: 900px;
+
+            margin-right: 50px;
+        }
+
+        .para4 {
+            height: 100px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: lightgray;
+
+            font-size: 25px;
+
+        }
+
+        .para4 h4 {
+            padding-top: 10px;
+            padding-left: 43%;
+        }
+
+        .para4 h5 {
+            padding-left: 100px;
+            padding-top: 5px;
+            color: hsla(0, 0%, 0%, 0.847);
+        }
+
+        .photo5 {
+            height: 510px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+
+        }
+
+        .photo5 img {
+            height: 510px;
+            width: 900px;
+
+            margin-right: 50px;
+        }
+
+        .para5 {
+            height: 100px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: lightpink;
+
+            font-size: 25px;
+
+        }
+
+        .para5 h4 {
+            padding-top: 10px;
+            padding-left: 43%;
+        }
+
+        .para5 h5 {
+            padding-left: 100px;
+            padding-top: 5px;
+            color: hsla(0, 0%, 0%, 0.847);
+        }
+
+        .photo6 {
+            height: 510px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+
+        }
+
+        .photo6 img {
+            height: 510px;
+            width: 900px;
+
+            margin-right: 50px;
+        }
+
+        .para6 {
+            height: 100px;
+            width: 900px;
+            margin-left: 250px;
+            margin-right: 50px;
+
+            margin-top: 2px;
+            background-color: lightgreen;
+
+            font-size: 25px;
+
+        }
+
+        .para6 h4 {
+            padding-top: 10px;
+            padding-left: 43%;
+        }
+
+        .para6 h5 {
+            padding-left: 100px;
+            padding-top: 5px;
+            color: hsla(0, 0%, 0%, 0.847);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: auto;
+            color: #333;
+        }
+
+        footer h3 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        footer p a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+
+
+
+
+        @media(min-width: 31.25rem) {
+            #landing {
+                display: flex;
+                height: 100%;
+            }
+
+            #landing-text {
+                height: 100vh;
+            }
+
+            #landing-image {
+                height: 100vh;
+            }
+        }
+
+        /*Screen Sizes 700px +*/
+
+        @media(min-width: 43.75rem) {
+            .btn {
+                padding: 1rem 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="cmt" id="cmt1">
+                <h1>MY PHOTOGRAPHY </h1>
+                <h2>WEBSITE</h2>
+                <br>
+                <h3>Beatyful Images</h3>
+                <br>
+                <a href="#">View Work</a>
+            </div>
+            <div class="cmt" id="cmt2">
+                <img src="https://source.unsplash.com/De8wMYoSSBc" alt="photo">
+            </div>
+        </div>
+
+        <div class="black">
+            <h1>My Work</h1>
+        </div>
+        <div class="photo2">
+            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="nature image">
+        </div>
+
+        <div class="para2">
+            <h4>Photo One</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!</h5>
+        </div>
+        <div class="photo3">
+            <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="nature image">"
+        </div>
+        <div class="para3">
+            <h4>Photo Two</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!</h5>
+        </div>
+        <div class="photo4">
+            <img src="https://source.unsplash.com/1600x900/?nature,flowers " alt="nature image">
+        </div>
+        <div class="para4">
+            <h4>Photo Three</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!</h5>
+        </div>
+        <div class="photo5">
+            <img src="https://source.unsplash.com/1600x900/?nature,animals" alt="nature image">
+        </div>
+        <div class="para5">
+            <h4>Photo Four</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!</h5>
+        </div>
+        <div class="photo6">
+            <img src="https://source.unsplash.com/1600x900/?nature,clouds" alt="nature image">
+        </div>
+        <div class="para6">
+            <h4>Photo Five</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!</h5>
+        </div>
+
+
+        <footer>
+            <h3>Get In Touch</h3>
+
+            <br>
+            <p>Email or call us to set up a consult</p>
+            <br>
+
+            <p>Email: <strong>contact@myphotographyproject.test</strong></p>
+            <br>
+
+            <p>Phone:
+                <a href="+3595555555">
+                    <strong>(+359) 555-5555</strong>
+                </a>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
